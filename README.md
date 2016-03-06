@@ -20,4 +20,4 @@ CloudFlare uses [a patch](https://github.com/cloudflare/sslconfig/tree/master/pa
 OpenSSL that enables the ChaCha20/Poly1305 cipher suites and implements
 special logic to ensure it is only taken if it is the client's top cipher
 choice.  Without this patch, the cipher suite choice in the configuration
-will not work correctly. This patch is available on the official [cloudflare/sslconfig](https://github.com/cloudflare/sslconfig) or [apt](https://launchpad.net/~laine-gholson/+archive/ubuntu/chacha-openssl) for Trusty and Xenial on Ubuntu.
+will not work correctly. This patch is available on the official [cloudflare/sslconfig](https://github.com/cloudflare/sslconfig) or [PPA](https://launchpad.net/~laine-gholson/+archive/ubuntu/chacha-openssl) for Trusty and Xenial on Ubuntu.
