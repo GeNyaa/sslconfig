@@ -7,7 +7,7 @@ ssl_session_timeout         5m;
 ssl_stapling                on;
 ssl_stapling_verify         on;
 ssl_trusted_certificate     CA.crt;
-add_header                  Public-Key-Pins 'pin-sha256="active pin"; pin-sha256="back-up pin"; max-age=5184000'; # Pin your certificates/back-up.
+add_header                  Public-Key-Pins 'pin-sha256="active pin"; pin-sha256="back-up pin"; max-age=3600'; # Pin your certificates/back-up.
 add_header                  Strict-Transport-Security 'max-age=15724800; includeSubDomains'; # add transport header
 # Following only applies when nginx is compiled with nginx-CT (https://github.com/grahamedgecombe/nginx-ct)
 ssl_ct                      on;
