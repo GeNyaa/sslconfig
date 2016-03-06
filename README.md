@@ -16,8 +16,8 @@ We currently use OpenSSL 1.0.2-stable (+ patches).
 ChaCha20/Poly1305 patch
 -----------------------
 
-CloudFlare uses [a patch](patches/openssl__chacha20_poly1305_cf.patch) for
+CloudFlare uses [a patch](https://launchpad.net/~laine-gholson/+archive/ubuntu/chacha-openssl) for
 OpenSSL that enables the ChaCha20/Poly1305 cipher suites and implements
 special logic to ensure it is only taken if it is the client's top cipher
 choice.  Without this patch, the cipher suite choice in the configuration
-will not work correctly.
+will not work correctly. This patch is available on the official cloudflare/sslconfig or apt via the above used link for Trusty and Xenial on Ubuntu.
